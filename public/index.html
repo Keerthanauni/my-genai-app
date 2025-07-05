@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image-to-Caption Generator</title>
     <style>
-        /* General body styling */
         body {
-            font-family: 'Inter', sans-serif; /* Using Inter, as per guidelines */
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,25 +16,24 @@
             background-color: #f0f2f5;
             color: #333;
             padding: 20px;
-            box-sizing: border-box; /* Include padding in element's total width and height */
+            box-sizing: border-box; 
         }
 
-        /* Container for the main application */
         .container {
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 12px; /* Rounded corners */
+            border-radius: 12px; 
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
             max-width: 600px;
-            width: 100%; /* Fluid width */
+            width: 100%; 
             box-sizing: border-box;
         }
 
         h1 {
             color: #2c3e50;
             margin-bottom: 25px;
-            font-size: 2em; /* Responsive font size */
+            font-size: 2em;
         }
 
         .upload-section {
@@ -53,7 +51,7 @@
         }
 
         input[type="file"] {
-            display: none; /* Hide the default file input */
+            display: none;
         }
 
         .upload-text {
@@ -69,13 +67,13 @@
 
         /* Image preview styling */
         #image-preview {
-            max-width: 100%; /* Fluid image width */
+            max-width: 100%; 
             max-height: 300px;
             border-radius: 8px;
-            margin: 20px auto; /* Centering the image horizontally */
+            margin: 20px auto; 
             border: 1px solid #ddd;
-            object-fit: contain; /* Ensure image fits without cropping */
-            display: none; /* Hidden by default, will be set to block by JS when image is loaded */
+            object-fit: contain; 
+            display: none; 
         }
 
         /* Button styling */
@@ -116,7 +114,7 @@
             font-size: 1.15em;
             color: #495057;
             word-wrap: break-word; /* Ensure long words wrap */
-            text-align: left; /* Align text to the left within the box */
+            text-align: left;
         }
 
         /* Loading indicator styling */
@@ -138,8 +136,8 @@
 
         /* Message box for errors/info */
         .message-box {
-            background-color: #ffe0b2; /* Light orange for warnings/info */
-            border: 1px solid #ff9800; /* Orange border */
+            background-color: #ffe0b2; 
+            border: 1px solid #ff9800; 
             border-radius: 8px;
             padding: 15px;
             margin-top: 20px;
@@ -198,7 +196,7 @@
         </div>
     </div>
 
-<script type="module">
+    <script type="module">
         // UI elements
         const imageUpload = document.getElementById('image-upload');
         const uploadArea = document.getElementById('upload-area');
@@ -349,5 +347,6 @@
         // Initial state setup on load
         clearPreview();
     </script>
+
 </body>
 </html>
